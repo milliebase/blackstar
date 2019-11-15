@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'AktivGrotesk';
+    font-weight: normal;
+    src: url('../fonts/AktivGrotesk-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'AktivGrotesk';
+    font-weight: bold;
+    src: url('../fonts/AktivGrotesk-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'AktivGrotesk';
+    font-weight: 300;
+    src: url('../fonts/AktivGrotesk-Light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'AktivGrotesk';
+    font-weight: 500;
+    src: url('../fonts/AktivGrotesk-Medium.otf') format('opentype');
+}
+
+h1, p {
+    font-family: 'AktivGrotesk';
+}
+
+h1 {
+    font-size: 22px;
+}
+
+p {
+    font-size: 16px;
+}
+
