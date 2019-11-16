@@ -18,18 +18,30 @@
 </head>
 <body>
   <header>
-    <nav>
-      <img src="images/svg/menu.svg" alt="menubar">
-      <div>
-        <!--FIX NAVBAR-->
-      </div>
+    <nav class="nav-bar">
+        <div class="menu-button">
+            <img src="images/svg/menu.svg" alt="Menu button" loading="lazy">
+        </div>
+
+        <img src="images/svg/icon.svg" alt="Blackstar icon" loading="lazy">
+
+        <div class="language">
+        <p>Eng</p>
+        <img src="images/svg/arrow_down.svg" alt="Arrow for changing language" loading="lazy">
+        </div>
     </nav>
 
-    <img src="images/svg/icon.svg" alt="icon">
+    <div class="overlay-nav hidden">
+        <nav class="overlay-nav-menu">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Sign up</li>
+                <li>Contact</li>
+            </ul>
 
-    <div class="language">
-      <p>ENG</p>
-      <img src="images/svg/arrow_down.svg" alt="arrow">
+            <img src="images/svg/exit.svg" alt="Exit button" loading="lazy">
+        </nav>
     </div>
   </header>
 
