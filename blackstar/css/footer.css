@@ -1,0 +1,20 @@
+footer {
+    height: 30vh;
+    background-color: #BB9941;
+
+}
+
+footer .logo-box {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .logo-box .icon {
+    height: 26px;
+}
+
+footer .logo-box .logo {
+    height: 17px;
+}
+
+
