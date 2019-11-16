@@ -1,0 +1,43 @@
+.text-sections {
+    overflow: auto;
+    height: 54vh;
+    width: 100vw;
+    background-color: #000000;
+    padding: 0 16%;
+
+    color: white;
+    text-align: center;
+}
+
+.golden-line {
+    border: 2px solid #BB9941;
+    width: 177px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.text-sections h1 {
+    letter-spacing: 0.305em;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-top: 48px;
+}
+
+.text-sections p {
+    font-weight: normal;
+    line-height: 19px;
+}
+
+.text-section3 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-section3 h1 {
+    margin-top: 0;
+}
+
+.text-section3 p {
+    margin-bottom: 0;
+}
