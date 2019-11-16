@@ -24,14 +24,14 @@
 
 body {
     width: 100vw;
-}
-
-h1, p {
+    color: white;
     font-family: 'AktivGrotesk';
 }
 
-h1 {
-    font-size: 22px;
+h1, .overlay-nav-menu li {
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 0.3em;
 }
 
 p {
