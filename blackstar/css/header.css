@@ -1,0 +1,89 @@
+header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+}
+
+/****NAVBAR****/
+.nav-bar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6% 5%;
+    background-color: rgba(0, 0, 0, 0.13);
+}
+
+/*MENU*/
+.menu-button {
+    width: 12%;
+}
+
+/*LANGUAGE*/
+.language {
+    width: 12%;
+    height: 42px;
+    display: flex;
+    align-self: flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.language p {
+    height: 100%;
+    margin: 0;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.185em;
+}
+
+.language img {
+    margin: 8% 0;
+}
+
+/****OVERLAY NAV****/
+.overlay-nav {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.534);
+    backdrop-filter: blur(4px); /*Not supported in some browser, what should we do instead?*/
+}
+
+.overlay-nav-menu {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.overlay-nav-menu ul {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15%;
+}
+
+.overlay-nav-menu li {
+    text-transform: uppercase;
+}
+
+.hidden {
+    display: none;
+}
+
+/****MEDIA QUERIES FOR DESKTOP****/
+@media (min-width: 1024px) {
+
+}
