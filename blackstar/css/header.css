@@ -28,6 +28,7 @@ header {
     align-self: flex-start;
     justify-content: space-between;
     align-items: flex-start;
+    z-index: 99;
 }
 
 .language p {
@@ -50,11 +51,20 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
+    position: absolute;
+    top: -100vh;
+    z-index: 95;
+    background-color: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(10px); /*Not supported in some browser, what should we do instead?*/
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease;
+}
+
+.transform-active {
     top: 0;
-    z-index: 99;
-    background-color: rgba(0, 0, 0, 0.534);
-    backdrop-filter: blur(4px); /*Not supported in some browser, what should we do instead?*/
 }
 
 .overlay-nav-menu {
@@ -63,7 +73,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .overlay-nav-menu ul {
@@ -79,9 +89,9 @@ header {
     text-transform: uppercase;
 }
 
-.hidden {
+/* .hidden {
     display: none;
-}
+} */
 
 /****MEDIA QUERIES FOR DESKTOP****/
 @media (min-width: 1024px) {
