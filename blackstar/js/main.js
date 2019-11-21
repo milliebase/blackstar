@@ -4,26 +4,49 @@ const overlayNav = document.querySelector('.overlay-nav');
 const exitButton = document.querySelector('.overlay-nav-menu img');
 const menuLinks = document.querySelectorAll('.overlay-nav-menu li');
 
-//Callback function to show menu when menu-icon is clicked.
+/**
+ * Callback function to show menu when menu-icon is clicked.
+ *
+ */
 const showMenu = function () {
     overlayNav.classList.add('transform-active');
     body.classList.toggle('no-scroll');
 }
 
-//Callback function to hide menu when exit-icon is clicked.
+/**
+ * Callback function to hide menu when exit-icon is clicked.
+ *
+ */
 const hideMenu = function () {
     overlayNav.classList.remove('transform-active')
     body.classList.toggle('no-scroll');
 }
 
-//Callback function to hide menu and scroll to a section with a short time delay.
+/**
+ * //Callback function to hide menu and scroll to a section with a short time delay.
+ *
+ */
 const pressMenuItem = function () {
     setTimeout(hideMenu, 300);
 }
 
-//Function to scroll to a certain section from menu.
+/**
+ * Scrolls to chosen section with the nav-height added to the y-axis.
+ *
+ * @param {string} section
+ */
 const scrollTo = function (section) {
-    section.scrollIntoView({behavior: 'smooth'});
+    const nav = document.querySelector('.nav-bar');
+    const navHeight = nav.clientHeight;
+
+    let sectionPosition = section.offsetTop - navHeight;
+
+    //Smooth-behavior not supported by all browsers
+    window.scrollTo({
+        top: sectionPosition,
+        left: 0,
+        behavior: 'smooth'
+    });
 }
 
 //Eventlisteners for overlay-nav-menu
