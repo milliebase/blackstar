@@ -7,7 +7,6 @@
     justify-content: center;
     align-items: center;
 
-    color: white;
     text-align: center;
 }
 
@@ -17,25 +16,20 @@
 }
 
 .golden-line {
+    margin-top: 1.375em;
+    margin-bottom: 1.375em;
+
     border: 2px solid #BB9941;
     width: 177px;
-    margin-top: 22px;
-    margin-bottom: 22px;
 }
 
 .text-sections h1 {
     margin: 0;
-    letter-spacing: 0.305em;
-    line-height: 28px;
-    font-weight: normal;
     text-transform: uppercase;
 }
 
 .text-sections p {
-    margin-top: 1em;
+    margin-top: 1.1875em;
     margin-bottom: 0;
-
-    font-weight: normal;
-    line-height: 19px;
 }
 
