@@ -1,4 +1,5 @@
 .text-sections {
+    position: relative;
     height: 54vh;
     width: 100vw;
     background-color: #000000;
@@ -10,7 +11,7 @@
     text-align: center;
 }
 
-.text-sections div {
+.text-sections .wrapper {
     width: 70%;
     min-width: 283px;
 }
@@ -35,4 +36,16 @@
 
 .text-sections button {
     margin-top: 2.43em;
+}
+
+.text-sections .popup {
+    position: absolute;
+    bottom: 0;
+
+    height: 332px;
+    background-color: #000000;
+}
+
+.text-sections .popup form {
+    background-color: rgba(187,153,65,0.75);
 }
