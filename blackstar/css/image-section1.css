@@ -2,3 +2,33 @@
    background-image: url(../images/test.png);
    background-size: cover;
 } /*Test image, delete when start working on this section*/
+
+.image-section1 {
+    overflow: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    text-align: center;
+}
+
+.image-section1 .logo-box h1 {
+    margin-top: 43%;
+    margin-bottom: 1.66em;
+
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+}
+
+.image-section1 .logo-box img {
+    height: 25px;
+    width: 303px;
+}
+
+.image-section1 img {
+    height: 44px;
+}
+

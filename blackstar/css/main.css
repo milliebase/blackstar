@@ -38,8 +38,23 @@ h1, .overlay-nav-menu li {
     font-size: 24px;
     font-weight: normal;
     letter-spacing: 0.3em;
+    line-height: 1.1666em;
 }
 
 p {
     font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 0.02em;
+    line-height: 1.1875;
+}
+
+button {
+    height: 48px;
+    width: 218px;
+    border: 2px solid #BB9941;
+    background-color: rgba(0, 0, 0, 0.1);
+
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
 }
