@@ -56,7 +56,6 @@ exitButton.addEventListener('click', hideMenu);
 
 //Eventlisteners for overlay-nav-menu links
 menuLinks.forEach(menuLink => {
-
     menuLink.addEventListener('click', () => {
 
         let menuLinkClass = menuLink.className;
@@ -74,7 +73,6 @@ menuLinks.forEach(menuLink => {
                     setTimeout(scrollTo, 500, sectionId);
                 }
             })
-
         } else {
             hideMenu();
         }
