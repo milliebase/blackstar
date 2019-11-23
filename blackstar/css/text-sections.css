@@ -38,14 +38,61 @@
     margin-top: 2.43em;
 }
 
-.text-sections .popup {
+.popup {
     position: absolute;
     bottom: 0;
 
-    height: 332px;
+    height: 100%;
+    width: 100%;
     background-color: #000000;
 }
 
-.text-sections .popup form {
-    background-color: rgba(187,153,65,0.75);
+.popup div {
+    height: 35%;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.popup p {
+    margin: 0;
+}
+
+.popup div p:first-child {
+    margin-bottom: 1.1875em;
+}
+
+.popup form {
+    padding: 0.65em 0;
+    background-color: rgba(187,153,65,0.75);
+
+    font: inherit;
+    text-align: start;
+}
+
+.popup form label {
+    margin-left: 2.5em;
+    margin-right: 0.4em;
+
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 1.125em;
+}
+
+.popup form input {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+
+    color: white;
+    font: inherit;
+}
+
+.popup button {
+    margin-top: 10%;
+}
+
+
+
