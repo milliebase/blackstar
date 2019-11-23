@@ -36,15 +36,32 @@
 
 .text-sections button {
     margin-top: 2.43em;
+    transition: 100ms linear;
+}
+
+.button-active {
+    background-color: #BB9941;
 }
 
 .popup {
+    display: none;
+    opacity: 0;
+
     position: absolute;
     bottom: 0;
-
     height: 100%;
     width: 100%;
     background-color: #000000;
+
+    transition: 700ms ease-out;
+}
+
+.popup-display {
+    display: block;
+}
+
+.popup-effect {
+    opacity: 1;
 }
 
 .popup div {
@@ -90,8 +107,18 @@
     font: inherit;
 }
 
+.popup form input:focus {
+    outline: none;
+}
+
 .popup button {
     margin-top: 10%;
+}
+
+.popup button img {
+    transform: rotate(-90deg);
+    width: 1.1875em;
+    margin-left: 10%;
 }
 
 
