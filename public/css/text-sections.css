@@ -1,4 +1,5 @@
 .text-sections {
+    position: relative;
     height: 54vh;
     width: 100vw;
     background-color: #000000;
@@ -10,7 +11,7 @@
     text-align: center;
 }
 
-.text-sections div {
+.text-sections .wrapper {
     width: 70%;
     min-width: 283px;
 }
@@ -35,4 +36,90 @@
 
 .text-sections button {
     margin-top: 2.43em;
+    transition: 100ms linear;
 }
+
+.button-active {
+    background-color: #BB9941;
+}
+
+.popup {
+    display: none;
+    opacity: 0;
+
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+
+    transition: 700ms ease-out;
+}
+
+.popup-display {
+    display: block;
+}
+
+.popup-effect {
+    opacity: 1;
+}
+
+.popup div {
+    height: 35%;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup p {
+    margin: 0;
+}
+
+.popup div p:first-child {
+    margin-bottom: 1.1875em;
+}
+
+.popup form {
+    padding: 0.65em 0;
+    background-color: rgba(187,153,65,0.75);
+
+    font: inherit;
+    text-align: start;
+}
+
+.popup form label {
+    margin-left: 2.5em;
+    margin-right: 0.4em;
+
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 1.125em;
+}
+
+.popup form input {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+
+    color: white;
+    font: inherit;
+}
+
+.popup form input:focus {
+    outline: none;
+}
+
+.popup button {
+    margin-top: 10%;
+}
+
+.popup button img {
+    transform: rotate(-90deg);
+    width: 1.1875em;
+    margin-left: 10%;
+}
+
+
+
