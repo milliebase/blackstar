@@ -1,6 +1,7 @@
 .text-sections {
     position: relative;
     height: 54vh;
+    /* temporary solution for keyboard on mobile */
     min-height: 397px;
     width: 100vw;
     background-color: #000000;
