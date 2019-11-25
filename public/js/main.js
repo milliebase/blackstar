@@ -1,3 +1,5 @@
+//HEADER
+
 const body = document.querySelector('body');
 const menuButton = document.querySelector('.menu-button');
 const overlayNav = document.querySelector('.overlay-nav');
@@ -78,3 +80,6 @@ menuLinks.forEach(menuLink => {
         }
     })
 });
+
+//.IMAGE-SECTION4
+
