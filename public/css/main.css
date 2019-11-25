@@ -48,7 +48,7 @@ p {
     line-height: 1.1875;
 }
 
-button {
+.btn {
     height: 48px;
     width: 218px;
     border: 2px solid #BB9941;
