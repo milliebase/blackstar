@@ -1,6 +1,8 @@
 .text-sections {
     position: relative;
     height: 54vh;
+    /* temporary solution for keyboard on mobile */
+    min-height: 397px;
     width: 100vw;
     background-color: #000000;
 
@@ -64,6 +66,10 @@
     opacity: 1;
 }
 
+.hidden {
+    opacity: 0;
+}
+
 .popup div {
     height: 35%;
     margin: 0;
@@ -115,10 +121,20 @@
     margin-top: 10%;
 }
 
-.popup button img {
+.popup button span {
+    transition: 700ms ease;
+}
+
+.popup button span p {
+    display: inline-block;
+}
+
+.popup button span img {
+    display: inline-block;
     transform: rotate(-90deg);
     width: 1.1875em;
     margin-left: 10%;
+    margin-bottom: 1px;
 }
 
 
