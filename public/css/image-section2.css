@@ -20,6 +20,7 @@
 }
 
 .image-section2 div {
+    height: 50px;
     margin-bottom: 18%;
 
     display: flex;
@@ -36,10 +37,22 @@
 }
 
 .image-section2 div div {
+    padding: 8px;
+
     flex-direction: column;
+    justify-content: space-between;
+}
+
+.image-section2 div div span p {
+    font-size: 8px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
 }
 
 .image-section2 div div div {
+    padding: 0;
+
     flex-direction: row;
+    align-items: flex-end;
 
 }
