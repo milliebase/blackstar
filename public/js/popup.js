@@ -36,7 +36,7 @@ popupSubmitBtn.addEventListener('click', () => {
         popupInput.value = '';
         popupInput.placeholder='';
         setTimeout(() => {
-            popupSubmitBtn.innerHTML = "<img src='/public/images/svg/mark.svg' alt='check-mark'>";
+            popupSubmitBtn.innerHTML = "<img src='/public/images/svg/mark.svg' alt='check-mark' style='height:44px;width:44px;'>";
 
         }, 700)
         setTimeout(() => {
