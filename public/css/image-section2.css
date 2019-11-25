@@ -27,8 +27,15 @@
     align-items: center;
 }
 
-.image-section2 div div {
+.image-section2 div > * {
     margin: 0;
+}
+
+.image-section2 div > * > * {
+    margin: 0;
+}
+
+.image-section2 div div {
     flex-direction: column;
 }
 
