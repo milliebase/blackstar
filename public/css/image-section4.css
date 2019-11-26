@@ -20,7 +20,8 @@
 .front form {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0 15%;
 }
 
 .pick-color-touch, .outer-circle {
@@ -40,8 +41,9 @@
     height: 35px;
     background-color: transparent;
     border-radius: 100%;
-    border-width: 1px;
+    /* border-width: 1px;
     border-style: solid;
+    border-color: #272727; */
 }
 
 .inner-circle {
@@ -73,4 +75,6 @@
     z-index: 1;
     position: absolute;
     background-color: darkgrey;
+    display: flex;
+    overflow: hidden;
 }
