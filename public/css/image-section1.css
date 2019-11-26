@@ -32,3 +32,15 @@
     height: 44px;
 }
 
+@media (min-width: 1024px) {
+    .image-section1 .logo-box h2 {
+        margin-top: 28vh;
+        margin-bottom: 6vh;
+        font-size: 24px;
+    }
+    .image-section1 .logo-box img {
+        height: 36px;
+        width: 405px;
+    }
+
+}
