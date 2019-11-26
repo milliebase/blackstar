@@ -1,7 +1,7 @@
 footer {
     padding-top: 8px;
     height: 30vh;
-    background-color: #BB9941;
+    background-color: #1D1D1D;
 
     color: white;
     text-align: center;
@@ -79,12 +79,11 @@ footer .media-box img {
 
 footer .rights-box {
     margin-top: 8px;
-
     height: 26px;
 
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
 
@@ -98,6 +97,13 @@ footer .rights-box div {
 
 footer .rights-box div > * {
     text-transform: uppercase;
+}
+
+footer .rights-box hr {
+    width: 17px;
+    border: 0.5px solid rgba(255, 255, 255, 0.7);
+    transform: rotate(90deg);
+    margin: 0;
 }
 
 
