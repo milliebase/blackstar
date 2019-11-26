@@ -1,10 +1,10 @@
 .text-sections {
     position: relative;
     height: 54vh;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(29, 29, 29, 1));
     /* temporary solution for keyboard on mobile */
     min-height: 397px;
     width: 100vw;
-    background-color: #000000;
 
     display:flex;
     justify-content: center;
