@@ -45,6 +45,19 @@
     background-color: #BB9941;
 }
 
+@media (min-width: 1024px) {
+    .text-sections {
+        height: 49vh;
+    }
+    .text-sections .wrapper {
+        width: 54%;
+    }
+    .text-sections p {
+        margin-top: 1.7em;
+    }
+
+}
+
 .popup {
     display: none;
     opacity: 0;
