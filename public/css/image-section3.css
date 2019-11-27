@@ -1,0 +1,41 @@
+.image-section3 {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20% 0;
+}
+
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+.img-slide {
+    height: 42vh;
+    display: flex;
+}
+
+.arrow-holder {
+    height: 100%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-holder {
+    height: 100%;
+    width: 80%;
+    background-color: blue;
+    border: 2px solid white;
+}
+
+.download-brochure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
