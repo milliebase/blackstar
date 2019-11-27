@@ -17,33 +17,24 @@
     line-height: 28px;
 }
 
-.front form {
+.color-pickers {
     width: 100%;
+    height: 20%;
     display: flex;
     justify-content: space-between;
-    padding: 0 15%;
+    padding: 0 10%;
 }
 
-.pick-color-touch, .outer-circle {
+.color-picker-touch, .outer-circle {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.pick-color-touch {
+.color-picker-touch {
     width: 44px;
     height: 44px;
     border-radius: 100%;
-}
-
-.outer-circle {
-    width: 35px;
-    height: 35px;
-    background-color: transparent;
-    border-radius: 100%;
-    /* border-width: 1px;
-    border-style: solid;
-    border-color: #272727; */
 }
 
 .inner-circle {
@@ -51,22 +42,37 @@
     width: 25px;
     border-radius: 100%;
     border: none;
+    box-shadow: 0px 4px 10px rgba(154, 154, 154, 0.1);
 }
 
-.color-dark-grey {
-    background-color: #272727;
+.gold {
+    background-color: #BB9941;
 }
 
-.color-light-grey {
+.light-grey {
     background-color: #353C4E;
 }
 
-.color-white {
+.white {
     background-color: #FFFFFF;
 }
 
-.color-gold {
-    background-color: #BB9941;
+.dark-grey {
+    background-color: #272727;
+}
+
+.outer-circle {
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border-radius: 100%;
+}
+
+.active-outer-circle {
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: 0px 4px 10px rgba(154, 154, 154, 0.1);
+    border-color:  #BB9941;
 }
 
 .back {
@@ -75,6 +81,19 @@
     z-index: 1;
     position: absolute;
     background-color: darkgrey;
-    display: flex;
-    overflow: hidden;
+}
+
+.car-holder {
+    position: absolute;
+}
+
+.car-holder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 55%;
+}
+
+.active-car {
+    z-index: 99;
 }
