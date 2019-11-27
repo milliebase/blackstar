@@ -45,6 +45,9 @@ popupSubmitBtn.addEventListener('click', () => {
             popupBox.classList.remove('popup-effect');
             popupActivateBtn.classList.remove('button-active');
         }, 1500)
+        setTimeout(() => {
+            popupBox.classList.remove('popup-display');
+        }, 2000)
 
 
     }
