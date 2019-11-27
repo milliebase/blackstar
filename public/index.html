@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://unpkg.com/sanitize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -120,7 +120,24 @@
   </section><!--/text-section-->
 
   <section class="image-sections image-section3" id="download-brochure">
+    <h2>Premium Luxury</h2>
 
+    <div class="img-slide">
+        <div class="arrow-holder">
+            <img src="images/svg/arrow_left.svg" alt="Left arrow">
+        </div>
+        <div class="img-holder">
+            <img src="" alt="">
+        </div>
+        <div class="arrow-holder">
+            <img src="images/svg/arrow_right.svg" alt="Right arrow">
+        </div>
+    </div>
+
+    <div class="download-brochure">
+        <p>Download our brochure for more information</p>
+        <button class="btn">Download now</button>
+    </div>
   </section><!--/image-section2-->
 
   <section class="text-sections">
@@ -134,39 +151,60 @@
   <section class="image-sections image-section4">
     <div class="front">
         <h2>Personalize your Blackstar</h2>
-        <form action="index.html">
-            <div class="pick-color-touch">
-                <div class="outer-circle">
-                    <button class="inner-circle color-dark-grey"></button>
-                </div><!--/outer-circle-->
-            </div><!--pick-color-touch-->
 
-            <div class="pick-color-touch">
-                <div class="outer-circle">
-                    <button class="inner-circle color-light-grey"></button>
+        <div class="color-pickers">
+            <div class="color-picker-touch">
+                <div class="outer-circle active-outer-circle">
+                    <div class="inner-circle gold"></div>
                 </div><!--/outer-circle-->
-            </div><!--pick-color-touch-->
+            </div><!--color-picker-touch-->
 
-            <div class="pick-color-touch">
+            <div class="color-picker-touch">
                 <div class="outer-circle">
-                    <button class="inner-circle color-white"></button>
+                    <div class="inner-circle light-grey"></div>
                 </div><!--/outer-circle-->
-            </div><!--pick-color-touch-->
+            </div><!--color-picker-touch-->
 
-            <div class="pick-color-touch">
+            <div class="color-picker-touch">
                 <div class="outer-circle">
-                    <button class="inner-circle color-gold"></button>
+                    <div class="inner-circle white"></div>
                 </div><!--/outer-circle-->
-            </div><!--pick-color-touch-->
-        </form>
-    </div><!--/infront-->
+            </div><!--color-picker-touch-->
+
+
+            <div class="color-picker-touch">
+                <div class="outer-circle">
+                    <div class="inner-circle dark-grey"></div>
+                </div><!--/outer-circle-->
+            </div><!--color-picker-touch-->
+        </div><!--/color-pickers-->
+    </div><!--/front-->
 
     <div class="back">
-        <img src="images/image-section4/dark-grey-414.jpg" alt="Dark grey colored car">
-        <img src="images/image-section4/light-grey-414.jpg" alt="Light grey colored car">
-        <img src="images/image-section4/white-414.jpg" alt="White colored car">
-        <img src="images/image-section4/gold-414.jpg" alt="Gold colored car">
-    </div><!--/car-colors-->
+        <picture class="car-holder active-car" data-color="gold" data-hex="#BB9941">
+            <source media="(max-width: 414px)" srcset="images/image-section4/gold-414.jpg">
+            <source media="(min-width: 415px)" srcset="images/image-section4/gold-1024.jpg">
+            <img src="images/image-section4/gold-414.jpg" alt="Gold colored car">
+        </picture>
+
+        <picture class="car-holder" data-color="light-grey" data-hex="#353C4E">
+            <source media="(max-width: 414px)" srcset="images/image-section4/light-grey-414.jpg">
+            <source media="(min-width: 415px)" srcset="images/image-section4/light-grey-1024.jpg">
+            <img src="images/image-section4/light-grey-414.jpg" alt="Light grey colored car">
+        </picture>
+
+        <picture class="car-holder" data-color="white" data-hex="#FFFFFF">
+            <source media="(max-width: 414px)" srcset="images/image-section4/white-414.jpg">
+            <source media="(min-width: 415px)" srcset="images/image-section4/white-1024.jpg">
+            <img src="images/image-section4/white-414.jpg" alt="White colored car">
+        </picture>
+
+        <picture class="car-holder" data-color="dark-grey" data-hex="#272727">
+            <source media="(max-width: 414px)" srcset="images/image-section4/dark-grey-414.jpg">
+            <source media="(min-width: 415px)" srcset="images/image-section4/dark-grey-1024.jpg">
+            <img src="images/image-section4/dark-grey-414.jpg" alt="Dark grey colored car">
+        </picture>
+    </div><!--/back-->
   </section><!--/image-section4-->
 
   <section class="text-sections" id="sign-up">
