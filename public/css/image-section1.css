@@ -1,6 +1,6 @@
 .image-section1 .background-image {
     position: absolute;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     object-fit: cover;
     object-position: 50% 100%;
