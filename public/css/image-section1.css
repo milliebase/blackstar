@@ -1,7 +1,28 @@
-.image-section1 {
-   background-image: url(../images/test.png);
-   background-size: cover;
-} /*Test image, delete when start working on this section*/
+.image-section1 .background-image {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 100%;
+    z-index: -1;
+}
+
+.image-section1 .background-image-mobile {
+    display: inline-block;
+}
+
+.image-section1 .background-image-desktop {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .image-section1 .background-image-mobile {
+        display: none;
+    }
+    .image-section1 .background-image-desktop {
+        display: inline-block;
+    }
+}
 
 .image-section1 {
     overflow: auto;
@@ -32,3 +53,15 @@
     height: 44px;
 }
 
+@media (min-width: 1024px) {
+    .image-section1 .logo-box h2 {
+        margin-top: 28vh;
+        margin-bottom: 6vh;
+        font-size: 24px;
+    }
+    .image-section1 .logo-box img {
+        height: 36px;
+        width: 405px;
+    }
+
+}

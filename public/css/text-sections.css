@@ -1,10 +1,10 @@
 .text-sections {
     position: relative;
     height: 54vh;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(29, 29, 29, 1));
     /* temporary solution for keyboard on mobile */
     min-height: 397px;
     width: 100vw;
-    background-color: #000000;
 
     display:flex;
     justify-content: center;
@@ -22,7 +22,7 @@
     margin-top: 1.375em;
     margin-bottom: 1.375em;
 
-    border: 2px solid #BB9941;
+    border: 1px solid #BB9941;
     width: 177px;
 }
 
@@ -43,6 +43,19 @@
 
 .button-active {
     background-color: #BB9941;
+}
+
+@media (min-width: 1024px) {
+    .text-sections {
+        height: 49vh;
+    }
+    .text-sections .wrapper {
+        width: 54%;
+    }
+    .text-sections p {
+        margin-top: 1.7em;
+    }
+
 }
 
 .popup {
