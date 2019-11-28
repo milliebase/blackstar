@@ -14,9 +14,7 @@
 }
 
 .watch-scroll {
-    scroll-padding: 50%;
-    scroll-snap-align: center;
-    height: 150px;
+    height: 100%;
     width: 600px;
 }
 
@@ -26,6 +24,12 @@
     width: 163px;
     margin: 0 12px;
     border: 1px solid white;
+}
+
+.watch-section img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
 }
 
 .watch-section h2 {
@@ -38,10 +42,4 @@
     margin-top: 46px;
     margin-bottom: 20px;
     line-height: 36px;
-}
-
-.watch-section img {
-    object-fit: contain;
-    height: 100%;
-    width: 100%;
 }
