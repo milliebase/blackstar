@@ -1,11 +1,10 @@
-//HEADER
-
 const body = document.querySelector('body');
 const menuButton = document.querySelector('.menu-button');
 const overlayNav = document.querySelector('.overlay-nav');
 const exitButton = document.querySelector('.overlay-nav-menu img');
 const overlayMenuLinks = document.querySelectorAll('.overlay-nav-menu li');
 const desktopMenuLinks = document.querySelectorAll('.desktop-nav-menu li');
+const header = document.querySelector('header');
 const navBar = document.querySelector('.nav-bar');
 
 /**
@@ -119,106 +118,16 @@ desktopMenuLinks.forEach(menuLink => {
     })
 })
 
-
 window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 100) {
+    if (window.pageYOffset > 5 && window.innerWidth > 1024) {
         navBar.classList.add('hide-nav-bar');
     } else {
         navBar.classList.remove('hide-nav-bar');
     }
+
+    if (window.pageYOffset > 5) {
+        header.style.backgroundColor = 'black';
+    } else {
+        header.style.backgroundColor = 'rgba(0, 0, 0, 0.13)';
+    }
 })
-
-//.IMAGE-SECTION4
-const colorPickers = document.querySelectorAll('.color-picker-touch');
-const carHolders = document.querySelectorAll('.car-holder');
-
-const handleColorPicker = (event) => {
-    const eventChild = event.firstElementChild;
-
-    colorPickers.forEach(colorPicker => {
-        colorPicker.firstElementChild.classList.remove('active-outer-circle');
-    })
-
-    if (eventChild.classList.length === 1) {
-        eventChild.classList.add('active-outer-circle');
-    }
-
-    carHolders.forEach(carHolder => {
-        carHolder.classList.remove('active-car');
-
-        if (eventChild.firstElementChild.classList[1] === carHolder.dataset.color) {
-            carHolder.classList.add('active-car');
-            eventChild.style.borderColor = carHolder.dataset.hex;
-        }
-    })
-}
-
-colorPickers.forEach(colorPicker => {
-    colorPicker.addEventListener('click', (event) => {
-        handleColorPicker(event.currentTarget);
-    })
-})
-
-
-//.IMAGE-SECTION3
-const leftArrow = document.querySelector('.arrow-holder-left');
-const rightArrow = document.querySelector('.arrow-holder-right');
-const imgHolder = document.querySelector('.img-inner-holder');
-const image = document.querySelector('.img-inner-holder img');
-const imageWidth = image.clientWidth;
-
-const slideToRight = () => {
-        if (imgHolder.scrollLeft < imageWidth) {
-            imgHolder.scrollTo({
-                top: 0,
-                left: imageWidth,
-                behavior: 'smooth'
-            });
-        }
-
-        if (imgHolder.scrollLeft >= imageWidth) {
-            imgHolder.scrollTo({
-                top: 0,
-                left: imageWidth * 2,
-                behavior: 'smooth'
-            });
-        }
-}
-
-const slideToLeft = () => {
-    const thirdImage = imageWidth * 2;
-
-    if (imgHolder.scrollLeft > imageWidth ) {
-        imgHolder.scrollTo({
-            top: 0,
-            left: imageWidth,
-            behavior: 'smooth'
-        });
-    }
-
-    if (imgHolder.scrollLeft <= imageWidth) {
-        imgHolder.scrollTo({
-            top: 0,
-            left: 0,
-            behavior: 'smooth'
-        });
-    }
-}
-
-const handleSlide = (e) => {
-    if (e.toElement.alt === 'Right arrow') {
-        slideToRight();
-    }
-
-    if (e.toElement.alt === 'Left arrow') {
-        slideToLeft();
-    }
-}
-
-leftArrow.addEventListener('click', (e) => {
-    handleSlide(e);
-});
-
-rightArrow.addEventListener('click', (e) => {
-    handleSlide(e);
-});
