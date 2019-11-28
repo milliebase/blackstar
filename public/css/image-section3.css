@@ -44,6 +44,10 @@ h2 {
     overflow-x: scroll;
 }
 
+.img-inner-holder picture {
+    height: 100%;
+}
+
 .img-inner-holder img {
     height: 100%;
     object-fit: cover;
@@ -79,10 +83,6 @@ h2 {
 
     .arrow-holder {
         width: 100%;
-    }
-
-    .img-slide picture {
-        height: 100%;
     }
 
     .img-outer-holder {

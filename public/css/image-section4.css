@@ -90,6 +90,7 @@
 }
 
 .car-holder {
+    height: 100%;
     position: absolute;
 }
 
@@ -113,10 +114,6 @@
     .color-pickers {
         padding: 0 35%;
         align-items: flex-end;
-    }
-
-    .car-holder {
-        height: 100%;
     }
 
     .car-holder img {
