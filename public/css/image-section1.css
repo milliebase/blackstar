@@ -50,6 +50,8 @@
 }
 
 .image-section1 .arrow-down {
+    position: absolute;
+    bottom: 0;
     height: 44px;
     animation: hover 2900ms ease-in-out infinite;
     transition: 400ms;
