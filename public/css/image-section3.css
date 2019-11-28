@@ -36,7 +36,7 @@ h2 {
 .img-inner-holder {
     height: 100%;
     display: flex;
-    overflow-x: hidden;
+    overflow-x: scroll;
 }
 
 .img-inner-holder img {
