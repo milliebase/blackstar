@@ -14,23 +14,34 @@ h2 {
 }
 
 .img-slide {
-    height: 42vh;
+    height: 32vh;
     display: flex;
+    justify-content: space-between;
 }
 
 .arrow-holder {
     height: 100%;
-    width: 10%;
+    width: 7.5%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.img-holder {
+.img-outer-holder {
     height: 100%;
-    width: 80%;
-    background-color: blue;
+    width: 85%;
     border: 2px solid white;
+}
+
+.img-inner-holder {
+    height: 100%;
+    display: flex;
+    overflow-x: hidden;
+}
+
+.img-inner-holder img {
+    height: 100%;
+    object-fit: cover;
 }
 
 .download-brochure {
