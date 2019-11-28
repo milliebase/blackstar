@@ -50,3 +50,11 @@ h2 {
     justify-content: center;
     align-items: center;
 }
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:active {
+    background-color: #BB9941;
+}

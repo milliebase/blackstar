@@ -175,11 +175,3 @@ leftArrow.addEventListener('click', (e) => {
 rightArrow.addEventListener('click', (e) => {
     handleSlide(e);
 });
-
-
-//DOWNLOAD
-
-const downloadButton = document.querySelector('.download-brochure button');
-
-console.log(downloadButton);
-
