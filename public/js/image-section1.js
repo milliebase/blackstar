@@ -7,5 +7,4 @@ window.addEventListener('scroll', () => {
     } else {
         arrowDown.classList.remove('hidden');
     }
-    console.log(window.pageYOffset);
 })
