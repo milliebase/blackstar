@@ -4,7 +4,6 @@ header {
     height: auto;
     position: fixed;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.13);
 }
 
 /****NAVBAR****/
@@ -14,13 +13,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 4.5% 5%;
+    background-color: rgba(0, 0, 0, 0.13);
 }
 
-.hide-nav-bar {
-    display: none;
-}
-
-/*MENU BUTTON*/
+/*MENU*/
 .menu-button {
     width: 12%;
 }
@@ -30,6 +26,7 @@ header {
     width: 12%;
     height: 42px;
     display: flex;
+    align-self: flex-start;
     justify-content: space-between;
     align-items: flex-start;
     z-index: 99;
@@ -46,11 +43,6 @@ header {
 
 .language img {
     margin: 8% 0;
-}
-
-/****DESKTOP NAV MENU****/
-.desktop-nav-menu {
-    display: none;
 }
 
 /****OVERLAY NAV****/
@@ -109,65 +101,5 @@ header {
 
 /****MEDIA QUERIES FOR DESKTOP****/
 @media (min-width: 1024px) {
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        padding: 1% 8% 0;
-    }
 
-    /****NAVBAR****/
-    .nav-bar {
-        width: 52%;
-        padding: 0 0 2%;
-    }
-
-    /*MENU BUTTON*/
-    .menu-button {
-        display: none;
-    }
-
-    /*LANGUAGE*/
-    .language {
-        width: 10%;
-        align-items: flex-end;
-    }
-
-    .language p {
-        display: flex;
-        align-items: flex-end;
-    }
-
-    .language img {
-        margin: 20% 0;
-    }
-
-
-    /****DESKTOP NAV MENU****/
-    .desktop-nav-menu {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-
-    .desktop-nav-menu ul {
-        display: flex;
-        justify-content: space-between;
-        padding: 1% 15%;
-    }
-
-    .desktop-nav-menu li {
-        font-weight: 300;
-        text-transform: uppercase;
-        letter-spacing: 0.04em;
-        line-height: 19px;
-    }
-
-    .desktop-nav-menu:before {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 1px;
-        background-color: white;
-    }
 }
