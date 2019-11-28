@@ -26,6 +26,7 @@ body {
     width: 100vw;
     color: white;
     font-family: 'AktivGrotesk';
+    background-color: #1D1D1D;
 }
 
 /*Prevent from scrolling when overlay-open*/

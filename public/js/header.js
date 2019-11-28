@@ -6,6 +6,7 @@ const overlayMenuLinks = document.querySelectorAll('.overlay-nav-menu li');
 const desktopMenuLinks = document.querySelectorAll('.desktop-nav-menu li');
 const header = document.querySelector('header');
 const navBar = document.querySelector('.nav-bar');
+const desktopNavMenu = document.querySelector('.desktop-nav-menu');
 
 /**
  * Callback function to show menu when menu-icon is clicked.
@@ -53,21 +54,18 @@ const scrollToSection = function (sectionPosition) {
  * @param {string} section
  */
 const isMobileOrDesktop = function (section) {
-
     if (window.innerWidth >= 1024) {
-        const header = document.querySelector('header');
-        const headerHeight = header.clientHeight;
+        const desktopNavMenuHeight = desktopNavMenu.clientHeight;
 
-        let sectionPosition = section.offsetTop - headerHeight;
+        let sectionPosition = section.offsetTop - desktopNavMenuHeight;
 
         scrollToSection(sectionPosition);
     }
 
     if (window.innerWidth < 1024) {
-        const nav = document.querySelector('.nav-bar');
-        const navHeight = nav.clientHeight;
+        const navBarHeight = navBar.clientHeight;
 
-        let sectionPosition = section.offsetTop - navHeight;
+        let sectionPosition = section.offsetTop - navBarHeight;
 
         setTimeout(scrollToSection, 200, sectionPosition);
     }
