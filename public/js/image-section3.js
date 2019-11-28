@@ -2,9 +2,10 @@ const leftArrow = document.querySelector('.arrow-holder-left');
 const rightArrow = document.querySelector('.arrow-holder-right');
 const imgHolder = document.querySelector('.img-inner-holder');
 const image = document.querySelector('.img-inner-holder img');
-const imageWidth = image.clientWidth;
 
 const slideToRight = () => {
+    const imageWidth = image.clientWidth;
+
         if (imgHolder.scrollLeft < imageWidth) {
             imgHolder.scrollTo({
                 top: 0,
@@ -23,7 +24,7 @@ const slideToRight = () => {
 }
 
 const slideToLeft = () => {
-    const thirdImage = imageWidth * 2;
+    const imageWidth = image.clientWidth;
 
     if (imgHolder.scrollLeft > imageWidth ) {
         imgHolder.scrollTo({
