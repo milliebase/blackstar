@@ -16,7 +16,11 @@ __Time for project: 4 weeks__
 * 3Ds Max
 
 ## Features
-* 
+* Navigation menu
+* Subscription for newsletters
+* Download brochure
+* Image slide
+* Try out different colors on vehicle
 
 ## Responsive Design and compatibility
 As for now the responsive design is made for desktop and iPhone 6/7/8 Plus.
