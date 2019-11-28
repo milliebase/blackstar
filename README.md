@@ -15,6 +15,9 @@ __Time for project: 4 weeks__
 * Figma
 * 3Ds Max
 
+## Features
+* 
+
 ## Responsive Design and compatibility
 As for now the responsive design is made for desktop and iPhone 6/7/8 Plus.
 
@@ -38,3 +41,5 @@ For future development we should make it even more responsive, add more features
 
 ### License
 MIT
+
+<img src="https://media.giphy.com/media/Zkq2BJ10V0vxS/giphy.gif" width="100%">
