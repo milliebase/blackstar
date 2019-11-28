@@ -131,20 +131,38 @@
     <h2>Premium Luxury</h2>
 
     <div class="img-slide">
-        <div class="arrow-holder">
+        <div class="arrow-holder arrow-holder-left">
             <img src="images/svg/arrow_left.svg" alt="Left arrow">
         </div>
-        <div class="img-holder">
-            <img src="" alt="">
+        <div class="img-outer-holder">
+            <div class="img-inner-holder">
+                <picture>
+                    <source media="(max-width: 414px)" srcset="images/image-section3/overlay-inside-414.jpg">
+                    <source media="(min-width: 415px)" srcset="images/image-section3/overlay-inside-1024.jpg">
+                    <img src="images/image-section3/overlay-inside-414.jpg" alt="Overlay of inside panel">
+                </picture>
+
+                <picture>
+                    <source media="(max-width: 414px)" srcset="images/image-section3/inside-panel-414.jpg">
+                    <source media="(min-width: 415px)" srcset="images/image-section3/inside-panel-1024.jpg">
+                    <img src="images/image-section3/inside-panel-414.jpg" alt="Close up of panel">
+                </picture>
+
+                <picture>
+                    <source media="(max-width: 414px)" srcset="images/image-section3/inside-seat-414.jpg">
+                    <source media="(min-width: 415px)" srcset="images/image-section3/inside-seat-1024.jpg">
+                    <img src="images/image-section3/inside-seat-414.jpg" alt="Close up of seat">
+                </picture>
+            </div>
         </div>
-        <div class="arrow-holder">
+        <div class="arrow-holder arrow-holder-right">
             <img src="images/svg/arrow_right.svg" alt="Right arrow">
         </div>
     </div>
 
     <div class="download-brochure">
         <p>Download our brochure for more information</p>
-        <button class="btn">Download now</button>
+        <a href="pdf/blackstar-folder.pdf" download="blackstar-folder"><button class="btn">Download now</button></a>
     </div>
   </section><!--/image-section2-->
 
