@@ -1,3 +1,4 @@
+/****FRONT****/
 .front {
     width: 100%;
     height: 100%;
@@ -17,6 +18,7 @@
     line-height: 28px;
 }
 
+/****COLOR-PICKERS****/
 .color-pickers {
     width: 100%;
     height: 20%;
@@ -46,6 +48,22 @@
     box-shadow: 0px 4px 10px rgba(154, 154, 154, 0.1);
 }
 
+.outer-circle {
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border-radius: 100%;
+}
+
+/*STYLING FOR WHEN COLOR IS ACTIVE*/
+.active-outer-circle {
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: 0px 4px 10px rgba(154, 154, 154, 0.1);
+    border-color:  #BB9941;
+}
+
+/*COLORs*/
 .gold {
     background-color: #BB9941;
 }
@@ -62,20 +80,7 @@
     background-color: #272727;
 }
 
-.outer-circle {
-    width: 35px;
-    height: 35px;
-    background-color: transparent;
-    border-radius: 100%;
-}
-
-.active-outer-circle {
-    border-width: 2px;
-    border-style: solid;
-    box-shadow: 0px 4px 10px rgba(154, 154, 154, 0.1);
-    border-color:  #BB9941;
-}
-
+/****BACK****/
 .back {
     width: 100%;
     height: 100%;
@@ -97,4 +102,24 @@
 
 .active-car {
     z-index: 99;
+}
+
+/****MEDIA QUERIES FOR DESKTOP****/
+@media (min-width: 1024px) {
+    .front {
+        padding: 5% 10% 3%;
+    }
+
+    .color-pickers {
+        padding: 0 35%;
+        align-items: flex-end;
+    }
+
+    .back picture {
+        height: 100%;
+    }
+
+    .car-holder img {
+        object-position: 10% 40%;
+    }
 }
