@@ -43,3 +43,23 @@
     margin-bottom: 20px;
     line-height: 36px;
 }
+
+@media (min-width: 1024px) {
+    .watch-section {
+        height: 100vh;
+    }
+    .watch-container {
+        height: 277px;
+    }
+    .watch-scroll {
+        width: 100%;
+    }
+    .watch-scroll .image-box {
+        height: 277px;
+        width: 272px;
+        margin: 0 12px;
+    }
+    .watch-section h2 {
+        margin-top: 30vh;
+    }
+}

@@ -146,5 +146,11 @@
     margin-bottom: 1px;
 }
 
+@media (min-width: 1024px) {
+    .popup {
+        height: 100%;
+        width: 55%;
+    }
+}
 
 
