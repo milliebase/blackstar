@@ -1,3 +1,4 @@
+/****IMAGE-SECTION3***/
 .image-section3 {
     background-color: black;
     display: flex;
@@ -13,12 +14,14 @@ h2 {
     line-height: 28px;
 }
 
+/****IMG-SLIDE****/
 .img-slide {
     height: 32vh;
     display: flex;
     justify-content: space-between;
 }
 
+/*ARROW-HOLDEr*/
 .arrow-holder {
     height: 100%;
     width: 7.5%;
@@ -27,12 +30,14 @@ h2 {
     align-items: center;
 }
 
+/****IMG-OUTER-HOLDER****/
 .img-outer-holder {
     height: 100%;
     width: 85%;
     border: 2px solid white;
 }
 
+/*IMG-INNER-HOLDER*/
 .img-inner-holder {
     height: 100%;
     display: flex;
@@ -44,6 +49,7 @@ h2 {
     object-fit: cover;
 }
 
+/**DOWNLOAD-BROCHURE**/
 .download-brochure {
     display: flex;
     flex-direction: column;
@@ -57,4 +63,33 @@ h2 {
 
 .btn:active {
     background-color: #BB9941;
+}
+
+/****MEDIA QUERIES FOR DESKTOP****/
+@media (min-width: 1024px) {
+    /****IMAGE-SECTION3****/
+    .image-section3 {
+        padding: 5% 0 3%;
+    }
+
+    /****IMG-SLIDE****/
+    .img-slide {
+        height: 100%;
+    }
+
+    .arrow-holder {
+        width: 100%;
+    }
+
+    .img-slide picture {
+        height: 100%;
+    }
+
+    .img-outer-holder {
+        width: 49%;
+    }
+
+    .download-brochure {
+        padding-top: 2%;
+    }
 }
